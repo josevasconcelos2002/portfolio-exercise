@@ -70,7 +70,7 @@
 }
 
 .cursos-intensivos {
-  /* grid-column: 2; */
+  grid-column: 2;
   display: grid;
   gap: 2rem;
   position: relative;
@@ -94,7 +94,7 @@
 }
 
 .idiomas {
-  /* grid-column: 2; */
+  grid-column: 2;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -122,6 +122,7 @@
   #formacao {
     grid-template-columns: 1fr;
     gap: 40px;
+    grid-column: 1;
   }
 
   #formacao h2 {
@@ -133,5 +134,12 @@
 
   .formacao-texto {
     font-size: 1.25rem;
+  }
+
+  .formacao-texto,
+  .cursos-academicos,
+  .cursos-intensivos,
+  .idiomas {
+    grid-column: 1;
   }
 }
