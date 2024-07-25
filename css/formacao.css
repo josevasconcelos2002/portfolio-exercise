@@ -5,6 +5,7 @@
   gap: 6.25rem;
   background-color: #292828;
   padding: 3rem;
+  padding-bottom: 6rem;
 }
 
 #formacao h2 {
@@ -113,11 +114,24 @@
   top: -4px;
 }
 
+.idiomas::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/img/detalhe.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 9.5rem;
+  right: 20rem;
+}
+
 .idioma {
   display: flex;
   justify-content: space-between;
 }
 
+/* media querie */
 @media (max-width: 800px) {
   #formacao {
     grid-template-columns: 1fr;
@@ -126,7 +140,7 @@
   }
 
   #formacao h2 {
-    color: #141414;
+    color: #fff;
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;
@@ -141,5 +155,9 @@
   .cursos-intensivos,
   .idiomas {
     grid-column: 1;
+  }
+
+  .idiomas::after {
+    display: none;
   }
 }
