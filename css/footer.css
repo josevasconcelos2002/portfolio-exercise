@@ -1,10 +1,11 @@
 #contacto {
-  padding: 3rem;
-  padding-top: 7rem;
+  max-width: 1200px;
+  padding: 120px 3rem 60px 3rem;
   background-color: #141414;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 100px;
+  align-items: center;
 }
 
 .contacto-descricao,
@@ -14,12 +15,15 @@
 
 .contacto-descricao {
   max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 1.33;
 }
 
 .direitos {
   grid-column: 1;
   font-weight: 200;
-  font-size: 0.75rem;
+  font-size: 1.125rem;
+  grid-column: 1/-1;
 }
 
 .infos {
@@ -30,6 +34,9 @@
   flex-direction: column;
   grid-column: 2;
   grid-row: 1;
+  line-height: 1.1;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 800px) {
@@ -41,6 +48,6 @@
   .infos {
     grid-column: 1;
     grid-row: 2;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }

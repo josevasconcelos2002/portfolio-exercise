@@ -6,6 +6,11 @@ ul {
   padding: 3rem;
 }
 
+.logo {
+  width: 104px;
+  height: 38px;
+}
+
 .links {
   display: flex;
   gap: 1.25rem;

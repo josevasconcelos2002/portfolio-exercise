@@ -7,12 +7,12 @@
 
 body {
   margin: 0 auto;
-  /* padding: 3rem; */
   color: #141414;
   max-width: 1200px;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
